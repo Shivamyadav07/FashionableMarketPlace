@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="https://static.meeshosupply.com/web/meesho-logo-fav.png">
+    <link rel="icon" href="img/FashionableMarketPlaceLogo.png">
     <link rel="stylesheet" href="./css/homePage.css">
     <link rel="stylesheet" href="./css/search.css">
-    <title>SignUp | Meesho</title>
+    <title>SignUp | Fashionable Marketplace Webstore</title>
 </head>
 <body>
     <!-- Navigation Bar -->
     <section class="navbar">
       <div class="uppernav">
         <a href="index.html"><img
-          src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png"
+          style="height: 80px;"
+          src="img/FashionableMarketPlaceLogo.png"
           alt="logo"
           class="logo"
         /></a>
@@ -177,46 +178,4 @@
             window.location.href = "LogInPage.html";
         }
     }
-
-    
 </script>
-<!-- <script>
-
-
-    document.querySelector("#form").addEventListener("submit", Login);
-    async function Login(e) {
-      e.preventDefault();
-      let bodyLogin = {
-        name: document.querySelector("#usernm").value,
-        email: document.querySelector("#email").value,
-        mobile: document.querySelector("#mobile").value,
-        password: document.querySelector("#password").value,
-      };
-      bodyLogin = JSON.stringify(bodyLogin);
-      let url = `http://localhost:3000/register`;
-      try {
-        let res = await fetch(url, {
-          method: "POST",
-
-          body: bodyLogin,
-
-          headers: {
-            "content-Type": "application/json",
-          },
-        });
-        let data = await res.json();
-        if (!data.message) {
-          alert("Registration Success");
-          
-          window.open("../LogInPage.html", "_self");
-        } else {
-          alert(data.message);
-        }
-        console.log(data);
-      } catch (err) {
-        console.log(err);
-      }
-    }
-
-    
-</script> -->

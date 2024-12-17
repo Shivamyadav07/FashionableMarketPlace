@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="https://static.meeshosupply.com/web/meesho-logo-fav.png">
+    <link rel="icon" href="img/FashionableMarketPlaceLogo.png">
     <link rel="stylesheet" href="./css/homePage.css">
     <link rel="stylesheet" href="./css/search.css">
-    <title>Sign In | Messho</title>
+    <title>Sign In | Fashionable Marketplace Webstore</title>
 </head>
 <body>
     <!-- Navigation Bar -->
     <section class="navbar">
       <div class="uppernav">
         <a href="index.html"><img
-          src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png"
+          style="height: 80px;"
+          src="img/FashionableMarketPlaceLogo.png"
           alt="logo"
           class="logo"
         /></a>
@@ -127,7 +128,7 @@
                 <!-- <label for="">Password</label>  -->
                 <input id="password" type="password" placeholder="Enter Password*" />
                 <br>
-                <button id="SignUpBut" type="submit">SIGN IN</button>
+                <button id="SignUpBut" type="submit" onclick="signIn()">SIGN IN</button>
                 <button id="SignUpBut" type="submit" onclick="window.location.href='SignUpPage.html'">SIGN UP</button>
               </form>
         </div>               
@@ -138,7 +139,7 @@
 <script type="text/javascript" src="./script/search.js"></script>
 
 <script>
-    document.getElementById("form").addEventListener("submit", signIn);
+    document.getElementById("SignUpBut").addEventListener("submit", signIn);
     var regUser = JSON.parse(localStorage.getItem("user")) || [];
     function signIn(e) {
     e.preventDefault();
@@ -166,7 +167,7 @@
     }
   }
 </script>
-<!-- <script>
+<script>
     document.getElementById("form").addEventListener("submit", Login);
     
      
@@ -207,4 +208,4 @@
       }
     }
 </script>
- -->
+

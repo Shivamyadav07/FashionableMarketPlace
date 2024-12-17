@@ -19,7 +19,7 @@
 }
 .navbar {
   position: sticky;
-  top: 1px;
+  top: 0px;
   background-color: white;
   z-index: 99;
 }
@@ -123,6 +123,7 @@ li:hover {
 }
 .bottomNav {
   margin-top: 1em;
+  /* margin-top: -20px; */
   border-top: 1px solid rgba(61, 61, 61, 0.199);
   border-bottom: 1px solid rgba(61, 61, 61, 0.199);
 }
@@ -179,8 +180,8 @@ li:hover {
   font-size: large;
 }
 .image {
-  width: 50%;
-  justify-content: right;
+  width: 100%;
+  justify-content: center;
 }
 .image > img {
   width: 100%;
